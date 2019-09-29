@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+    calculator 
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body background="background.png">
+    <marquee> <div style="width: 600px;  padding-top:10px; padding-bottom:10px;border: 3px solid #A0A0A0; text-align: center;background: #C0C0C0;"> <em>This is my first web application , it's not that good now , but practise make everything better right ? </em> </div> </marquee>
+  
+    <div class="jumpotron text-center" style="border: 3px solid #A0A0A0;background: #C0C0C0;">
+    web calculator (basic html ,css)
+  
+  </div> 
+  <form name="calculator">
+  <div align="center">
+       <input  size="11"  type="text" id="display" readonly>
+</div>
+               <div class="container,jumpotron text-center">
+                <br>
+                <center>
+    <button type="button" class="btn btn-default" value="1" id="1" onclick="calculator.display.value += '1'"> 1 </button>
+    <button type="button" class="btn btn-default" value="2" id="2" onclick="calculator.display.value += '2'"> 2 </button>
+    <button type="button" class="btn btn-default" value="3" id="3" onclick="calculator.display.value += '3'" > 3 </button>
+    <button type="button" class="btn btn-default" value="+" id="+" onclick="calculator.display.value += '+'" > + </button>
+  </div>
+  <div class="container,jumpotron text-center">
+    <br>
+                <center>
+    <button type="button" class="btn btn-default" value="4" id="4" onclick="calculator.display.value += '4'" > 4 </button>
+    <button type="button" class="btn btn-default" value="5" id="5" onclick="calculator.display.value += '5'"> 5 </button>
+    <button type="button" class="btn btn-default" value="6" id="6" onclick="calculator.display.value += '6'" > 6 </button>
+    <button type="button" class="btn btn-default" value="-" id="-" onclick="calculator.display.value += '-'"> - </button>
+  </div>
+  <div class="container,jumpotron text-center">
+    <br>
+                <center>
+    <button type="button" class="btn btn-default" value="7" id="7" onclick="calculator.display.value += '7'"> 7 </button>
+    <button type="button" class="btn btn-default" value="8" id="8" onclick="calculator.display.value += '8'"> 8 </button>
+    <button type="button" class="btn btn-default" value="9" id="9" onclick="calculator.display.value += '9'"> 9 </button>
+    <button type="button" class="btn btn-default" value="/" id="/" onclick="calculator.display.value += '/'"> / </button>
+  </div>
+  <div class="container,jumpotron text-center">
+    <br>
+                <center>
+          <input id="clearButton" class="button" type="button" value="CE" onclick="calculator.display.value = ''">
+          
+    <button type="button" class="btn btn-default" value="0" id="0" onclick="calculator.display.value += '0'"> 0 </button>
+    <button type="button" class="btn btn-default" value="*" id="*" onclick="calculator.display.value += '*'"> * </button>
+    <button type="button" class="btn btn-default" value="=" id="=" onclick="calculator.display.value = eval(calculator.display.value)"> = </button>
+  </div>
+</form>
+  </body>
+</html>
